@@ -1,0 +1,5 @@
+<% @merchants.each do |merchant| %>
+
+  <%= link_to merchant[:attributes][:name], merchant_path(merchant[:id]) %>
+  
+<% end %>
